@@ -34,7 +34,7 @@ jobs:
         mode:
           - normal
           - test
-        target: []
+        target: [x86_64, wdr4310v1]
         include:
         - mode: normal
           title: Squashing builder

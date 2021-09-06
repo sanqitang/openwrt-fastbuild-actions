@@ -5,7 +5,7 @@ set -eo pipefail
 # shellcheck disable=SC1090
 source "${HOST_WORK_DIR}/scripts/lib/gaction.sh"
 
-SKIP_TARGET=1
+SKIP_TARGET=0
 if [ "x${GITHUB_EVENT_NAME}" = "xpush" ]; then
   if [ -n "${RD_TARGET}" ]; then
     echo "Commit message target: ${RD_TARGET}"
